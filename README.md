@@ -26,7 +26,7 @@ Where:
 * $\Gamma$ is the interfacial/surface tension ($\text{N/m}$).
 
 ### Dimensionless Formulation
-Scaling spatial coordinates by the equatorial radius $R_0 = r_{\text{pixels}} \cdot \text{pixel\_size}$:
+Scaling spatial coordinates by the equatorial radius $$R_0 = r_{\text{pixels}} \cdot \text{pixel\_size}$$:
 
 $$\bar{x} = \frac{x}{R_0}, \quad \bar{y} = \frac{y}{R_0}$$
 
