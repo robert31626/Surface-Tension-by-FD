@@ -77,7 +77,7 @@ The software runs on Linux, macOS, and Windows with **Python 3.8+**.
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/your-repo-name.git
+   git clone https://github.com/robert31626/Surface-Tension-by-FD
    cd your-repo-name
    ```
 
@@ -173,14 +173,14 @@ When using this code, methodology, or dataset in academic publications, please c
 
 ```bibtex
 @software{bahena_2026_zenodo,
-  author       = {Bahena Rodríguez, Roberto Uriel},
-  title        = {2D-ADER: Finite Difference Young-Laplace Method and Experimental Droplet Datasets},
+  author       = {Bahena, Roberto U.},{Escovar, Juan V.}
+  title        = {Finite Difference Young-Laplace Method and Experimental Droplet Datasets},
   month        = oct,
   year         = 2026,
   publisher    = {Zenodo},
   version      = {v1.0.0},
-  doi          = {10.5281/zenodo.XXXXXXX},
-  url          = {https://doi.org/10.5281/zenodo.XXXXXXX}
+  doi          = {10.5281/zenodo.23405107},
+  url          = {https://doi.org/10.5281/zenodo.23405107}
 }
 ```
 
