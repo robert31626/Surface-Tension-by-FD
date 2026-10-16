@@ -1,6 +1,6 @@
 # 2D-ADER: Finite Difference Young-Laplace Method & Experimental Droplet Analysis
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.XXXXXXX.svg)](https://doi.org/10.5281/zenodo.XXXXXXX)
+[![DOI](https://doi.org/10.5281/zenodo.23405107)](https://doi.org/10.5281/zenodo.23405107)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
 
@@ -48,25 +48,25 @@ Linear regression over the hydrostatic profile yields $B$ and directly determine
 
 ```text
 .
-â”œâ”€â”€ LICENSE                          # MIT License for code and analysis scripts
-â”œâ”€â”€ CITATION.cff                     # Citation metadata for automatic Zenodo indexing
-â”œâ”€â”€ README.md                        # Project documentation (this file)
-â”‚
-â”œâ”€â”€ src/                             # Core computational code
-â”‚   â”œâ”€â”€ FD_method.py                 # Multiprocessing analysis pipeline and batch processing
-â”‚   â”œâ”€â”€ fd_utils.py                  # High-order FD stencils, PBL sweeps, and geometry routines
-â”‚   â””â”€â”€ requirements.txt             # Environment dependencies
-â”‚
-â”œâ”€â”€ experimental_data/               # Experimental drop profiles and summary reports
-â”‚   â”œâ”€â”€ README.md                    # Detailed data dictionary and measurement protocols
-â”‚   â”œâ”€â”€ small_drops/                 # Edge coordinate text files (Profile_{id}.txt)
-â”‚   â”œâ”€â”€ intermediate_drops/
-â”‚   â”œâ”€â”€ large_drops/
-â”‚   â””â”€â”€ Summary_Results.xlsx         # Comparative metrics (2D-ADER vs. OpenDrop)
-â”‚
-â””â”€â”€ numerical_simulations/           # Theoretical benchmark profiles and verification
-    â”œâ”€â”€ profiles/                    # Ground-truth profiles obtained via ODE integration
-    â””â”€â”€ images/                      # Rendered synthetic drop images for noise robustness tests
+├── LICENSE                          # MIT License for code and analysis scripts
+├── CITATION.cff                     # Citation metadata for automatic Zenodo indexing
+├── README.md                        # Project documentation (this file)
+│
+├── src/                             # Core computational code
+│   ├── FD_method.py                 # Multiprocessing analysis pipeline and batch processing
+│   ├── fd_utils.py                  # High-order FD stencils, PBL sweeps, and geometry routines
+│   └── requirements.txt             # Environment dependencies
+│
+├── experimental_data/               # Experimental drop profiles and summary reports
+│   ├── README.md                    # Detailed data dictionary and measurement protocols
+│   ├── small_drops/                 # Edge coordinate text files (Profile_{id}.txt)
+│   ├── intermediate_drops/
+│   ├── large_drops/
+│   └── Summary_Results.xlsx         # Comparative metrics (2D-ADER vs. OpenDrop)
+│
+└── numerical_simulations/           # Theoretical benchmark profiles and verification
+    ├── profiles/                    # Ground-truth profiles obtained via ODE integration
+    └── images/                      # Rendered synthetic drop images for noise robustness tests
 ```
 
 ---
@@ -147,22 +147,22 @@ The file `experimental_data/Summary_Results.xlsx` compiles experimental results 
 | :--- | :---: | :--- |
 | `OP_theta` | $\text{deg}$ | Symmetry axis rotation angle identified by OpenDrop |
 | `R0` | $\text{mm}$ | Mean apex radius of curvature ($R_0$) |
-| `OP_Bo` | â€” | Mean Bond number relative to apex curvature (OpenDrop) |
-| `OP_S_Bo` | â€” | Standard deviation of Bond number (OpenDrop) |
+| `OP_Bo` | — | Mean Bond number relative to apex curvature (OpenDrop) |
+| `OP_S_Bo` | — | Standard deviation of Bond number (OpenDrop) |
 | `OP_gamma` | $\text{N/m}$ | Mean surface tension determined by OpenDrop |
 | `OP_S_gamma` | $\text{N/m}$ | Standard deviation (repeatability) of surface tension (OpenDrop) |
 | `d` | $\text{mm}$ | Mean equatorial droplet diameter |
-| `B_FD` | â€” | Mean Bond number / shape parameter from 2D-ADER FD method |
-| `S_B_FD` | â€” | Standard deviation of $B$ across the sequence (FD method) |
-| `<Sigma_B>_FD` | â€” | Mean standard error ($\sigma_B$) of the linear regression slope |
+| `B_FD` | — | Mean Bond number / shape parameter from 2D-ADER FD method |
+| `S_B_FD` | — | Standard deviation of $B$ across the sequence (FD method) |
+| `<Sigma_B>_FD` | — | Mean standard error ($\sigma_B$) of the linear regression slope |
 | `Gamma_FD` | $\text{N/m}$ | Mean surface tension computed via 2D-ADER FD method |
 | `S_Gama_FD` | $\text{N/m}$ | Standard deviation of surface tension across sequence (FD method) |
-| `Shape_parameter` | â€” | Mean drop deviation parameter from spherical cap geometry |
+| `Shape_parameter` | — | Mean drop deviation parameter from spherical cap geometry |
 | `Contact_Angle` | $\text{deg}$ | Mean contact angle ($\theta$) |
 | `Volume` | $\mu\text{L}$ | Axisymmetric volume calculated via numerical disk slicing integration |
 | `Area` | $\text{mm}^2$ | Projected 2D profile area computed via trapezoidal integration |
-| `Neumann_number` | â€” | Dimensionless Neumann number |
-| `Worthington_number`| â€” | Dimensionless Worthington number ($Wo = \frac{\Delta \rho g V}{\pi \Gamma_{\text{ref}} d_{\text{needle}}}$) |
+| `Neumann_number` | — | Dimensionless Neumann number |
+| `Worthington_number`| — | Dimensionless Worthington number ($Wo = \frac{\Delta \rho g V}{\pi \Gamma_{\text{ref}} d_{\text{needle}}}$) |
 | `Fitted_points` | integer | Mean number of spatial points utilized in the linear regression |
 
 ---
@@ -173,7 +173,7 @@ When using this code, methodology, or dataset in academic publications, please c
 
 ```bibtex
 @software{bahena_2026_zenodo,
-  author       = {Bahena RodrÃ­guez, Roberto Uriel},
+  author       = {Bahena Rodríguez, Roberto Uriel},
   title        = {2D-ADER: Finite Difference Young-Laplace Method and Experimental Droplet Datasets},
   month        = oct,
   year         = 2026,
